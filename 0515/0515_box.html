@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .red {
+            background-color: red;
+            left: 10px;
+            top: 10px;
+        }
+
+        .green {
+            background-color: green;
+            left: 50px;
+            top: 50px;
+        }
+
+        .blue {
+            background-color: blue;
+            left: 90px;
+            top: 90px;
+        }
+
+        /*박스의 부모 태그*/
+        body>div {
+            width: 400px;
+            height: 100px;
+            border: 3px solid black;
+
+            /*자식 태그에 apsolute사용 시 부모 태그에 relative 적용*/
+            position: relative;
+            /*영역을 벗어나는 부분 숨기기*/
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Id quis ad tempor sunt pariatur et aute esse voluptate aliqua excepteur.</h1>
+    <!-- 박스의 부모 태그 -->
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1>
+        Aliquip duis dolor ut do nisi proident.
+    </h1>
+</body>
+
+</html>

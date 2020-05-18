@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <style>
+        body {
+            padding-top: 80px;
+        }
+
+        #pHeader {
+            background-color: plum;
+        }
+
+        #pInfo {
+            background-color: lightpink;
+        }
+
+        #pSecond {
+            background-color: cadetblue;
+
+        }
+
+        #pSecond2,
+        #pInfo2,
+        #pHeader2 {
+            border-style: none;
+        }
+
+        /* .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        } */
+    </style>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <!-- container : 사이트의 양옆에 일정한 공백 -->
+        <div class="container">
+            <a class="navbar-brand" href="#">Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbar-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">HTML</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Geolocation</a>
+                            <a class="dropdown-item" href="#">Drag and Drop</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Motion</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">CSS3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ECMAScript5</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Node.js</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">API</a></li>
+                </ul>
+                <form class="form-inline">
+                    <input type="text" class="form-control" placeholder="Search">
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Node.js</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" id="pHeader2">
+                    <div class="card-header" id="pHeader">Panel Title</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#">HTML5</a></li>
+                        <li class="list-group-item"><a href="#">CSS3</a></li>
+                        <li class="list-group-item"><a href="#">ECMAScript5</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="card bg-info" id="pInfo2">
+                    <div class="card-header" id="pInfo">Panel Title</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#">jquery</a></li>
+                        <li class="list-group-item"><a href="#">HTML5 API</a></li>
+                    </ul>
+                </div>
+                <br>
+                <div class="card bg-secondary" id="pSecond2">
+                    <div class="card-header" id="pSecond">Panel Title</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#">About</a></li>
+                        <li class="list-group-item"><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <br>
+                <h1>Lorem ipsum</h1>
+                <p>Qui laborum anim eiusmod fugiat. Aliquip ut amet enim sint tempor Lorem velit laboris consectetur
+                    laboris
+                    sunt. Labore in voluptate incididunt elit id enim.</p>
+                <p>Cillum est in voluptate mollit veniam Lorem veniam. Occaecat minim deserunt quis duis dolore
+                    exercitation
+                    dolore enim. Lorem dolor officia anim Lorem incididunt occaecat amet sit veniam consectetur.
+                    Reprehenderit et occaecat sit eiusmod reprehenderit ipsum do enim voluptate id sit pariatur
+                    consequat
+                    eiusmod. Labore eiusmod anim ea adipisicing irure sit nostrud dolor dolore Lorem proident.</p>
+            </div>
+            <div class="col-md-9">
+                <div class="jumbotron">
+                    <h1>HTML5 + CSS3 Basic</h1>
+                    <p>Nulla ea culpa minim officia ipsum.</p>
+                    <p>Est aute aute nisi laborum non pariatur consequat elit.</p>
+                    <p>Eu qui eiusmod ut duis qui tempor ea consequat Lorem ipsum culpa velit.</p>
+                    <p>Consequat ad est aliqua labore in est deserunt culpa ut nostrud magna consectetur ea eiusmod.</p>
+                    <p>Magna anim Lorem consequat nisi eu velit nulla.</p>
+                    <a class="btn btn-primary btn-lg" href="#">Learn More</a>
+                </div>
+                <h1>Lorem ipsum</h1>
+                <p>Irure ut tempor laborum esse magna adipisicing do pariatur non eiusmod duis labore eiusmod.
+                    Adipisicing
+                    eu ex Lorem velit adipisicing tempor elit aliquip culpa aliqua consectetur eu adipisicing pariatur.
+                    Duis
+                    nisi cupidatat aliqua veniam. Culpa dolore sint sunt ipsum commodo laboris esse est. Enim labore
+                    mollit
+                    velit et ad magna et reprehenderit qui esse do ex quis. Consectetur tempor magna cupidatat pariatur
+                    minim ad anim veniam. Nulla ut dolor magna incididunt velit enim irure dolore adipisicing laborum
+                    reprehenderit consequat.</p>
+                <p>Id eiusmod dolore ut quis minim duis ullamco quis nulla aliqua. Ea Lorem esse est ut aliqua
+                    consectetur
+                    culpa. Irure ad amet Lorem reprehenderit enim qui pariatur minim veniam labore officia cillum
+                    nostrud
+                    anim. Culpa mollit aliqua excepteur veniam consequat mollit laborum.</p>
+                <p>Veniam non quis quis aute ut dolore. Tempor in ea deserunt cillum dolor eu voluptate. Minim ad elit
+                    sunt
+                    velit qui eiusmod aliqua sit quis cillum commodo. Duis laboris amet magna ipsum commodo ipsum labore
+                    Lorem sint fugiat. Incididunt excepteur sint et veniam exercitation in esse magna ut dolor
+                    incididunt
+                    laboris labore consequat. Nulla nostrud ad in fugiat occaecat. Et quis ad aute sunt et ex enim.</p>
+                <p>Commodo velit aute deserunt et dolore laboris non nulla in cillum pariatur aliquip amet est. Elit
+                    cupidatat consequat sunt fugiat. Consequat culpa voluptate dolore nostrud eiusmod enim nisi minim ut
+                    esse. Nulla est velit enim non. Veniam labore nisi ipsum laborum nostrud dolor veniam magna mollit
+                    laboris dolore. In fugiat laborum id deserunt amet Lorem mollit fugiat commodo nisi ullamco do.
+                    Excepteur nostrud laborum ut in et cillum consequat.</p>
+                <p>Officia nisi eiusmod aliquip pariatur cillum cillum eiusmod tempor ut laborum cupidatat adipisicing
+                    incididunt consequat. Aute aute minim laborum eiusmod minim enim non adipisicing adipisicing
+                    adipisicing
+                    esse nisi cillum laborum. Ad amet veniam fugiat ut incididunt exercitation ut ad aliqua magna non
+                    ea.
+                    Ullamco nostrud nisi minim nulla veniam Lorem proident ut.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            counter-increment: rint;
+            /*rint라는 카운터 1씩 증가*/
+        }
+
+        p::before {
+            content: counter(rint) ".";
+            /*태그앞에 rint,.출력*/
+        }
+
+        p::after {
+            content: "-"attr(data-page) "-"attr(class) "-page";
+            /*태그 맨뒤에 데이터페이지와 page*/
+        }
+
+        p::first-letter {
+            font-size: 3em;
+        }
+
+        .hyun::selection {
+            background-color: cadetblue;
+        }
+
+        a {
+            text-decoration: overline underline;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:link::after {
+            content: '-'attr(href);
+        }
+
+        input:not([type=password]) {
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem non veniam cupidatat deserunt aute occaecat non non.</h1>
+    <p class="hyun" data-page="53">Ex enim occaecat pariatur elit qui laborum aliqua.</p>
+    <p class="hyun" data-page="298">Duis ipsum id Lorem non commodo.</p>
+    <h1><a>Nothing</a></h1>
+    <h1><a href="http://hanbit.co.kr" target="_blank">Hanbit Media</a></h1>
+    <h1><a href="https://github.com/" target="_blank">Github</a></h1>
+    <input type="password">
+    <input>
+    <input type="password">
+    <input>
+
+</body>
+
+</html>

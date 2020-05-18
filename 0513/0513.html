@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* h1+h2 {
+            color: blueviolet;
+        }
+
+        h1~h2 {
+            background-color: cadetblue;
+        } */
+        h1:hover {
+            color: chocolate;
+        }
+
+        h1:active {
+            color: cornflowerblue;
+        }
+
+        input:enabled {
+            background-color: darkkhaki;
+        }
+
+        input:disabled {
+            background-color: darkolivegreen;
+        }
+
+        input:focus {
+            background-color: goldenrod;
+        }
+
+        /* 체크박스가 체크되었을때 바로 뒤에 div태그의 속성에 적용되는 효과 */
+        input[type="checkbox"]:checked+div {
+            font-size: 20px;
+            color: mediumpurple;
+        }
+
+        div {
+            overflow: hidden;
+            width: 650px;
+            height: 300px;
+            transition-duration: 1s;
+        }
+
+        ul {
+            overflow: hidden;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            padding: 15px;
+        }
+
+        li:first-child {
+            border-radius: 10px 0 0 10px;
+        }
+
+        li:last-child {
+            border-radius: 0 10px 10px 0;
+        }
+
+        li:nth-child(2n) {
+            background-color: #ff0003;
+        }
+
+        li:nth-child(2n + 1) {
+            background-color: #800000;
+        }
+    </style>
+</head>
+
+<body>
+    <input value="enabled" />
+    <input value="disabled" disabled /><br />
+    ------------------------------------------------------------------------------------
+    테스트<input type="checkbox" />
+    <div>
+        <h1>Ad labore consectetur esse anim officia nisi minim id.</h1>
+        <p>Et magna incididunt Lorem duis do.</p>
+    </div>
+    ------------------------------------------------------------------------------------
+    <h1>
+        Veniam excepteur est ad fugiat duis adipisicing elit mollit labore qui
+        aliquip.
+    </h1>
+    <h2>Ex qui aute exercitation cillum sunt amet eiusmod veniam sunt.</h2>
+    <h2>Minim tempor nulla et magna sit incididunt amet dolor.</h2>
+    <h2>Aliqua id nulla anim aliqua.</h2>
+    <h2>Voluptate velit duis commodo sunt occaecat.</h2>
+    ------------------------------------------------------------------------------------
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+    </ul>
+</body>
+
+</html>
