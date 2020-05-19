@@ -7,13 +7,38 @@
     <title>Document</title>
 </head>
 <style>
-    h1 {
-        color: aqua;
+    .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+
+    .red {
+        background-color: blueviolet;
+        left: 10px;
+        top: 10px;
+        z-index: 1;
+    }
+
+    .green {
+        background-color: cadetblue;
+        left: 50px;
+        top: 50px;
+        z-index: 9999;
+    }
+
+    .blue {
+        background-color: darkgoldenrod;
+        left: 90px;
+        top: 90px;
+
     }
 </style>
 
 <body>
-    <h1>Eu sit qui mollit sit occaecat non eu aliquip quis.</h1>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
 </body>
 
 </html>
