@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup</title>
+    <style>
+        table {
+            border-style: double;
+
+        }
+
+        td {
+            text-align: center;
+            width: 100px;
+            height: 200px;
+        }
+
+        .c1 {
+            background-color: aquamarine;
+        }
+
+        .c2 {
+            background-color: yellow;
+        }
+
+        th {
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <caption>colgroup 연습</caption>
+        <colgroup>
+            <col>
+            <col span="2" class="c1">
+            <col span="1" class="c2">
+        </colgroup>
+        <tr>
+            <th><img src="kuma1.jpg"></th>
+            <td>PC</td>
+            <td>Game</td>
+            <td>V4</td>
+        </tr>
+        <tr>
+            <th><img src="kuma2.jpg"></th>
+            <td>연꽃</td>
+            <td>로터스</td>
+            <td>lotus</td>
+        </tr>
+    </table>
+</body>
+
+</html>
