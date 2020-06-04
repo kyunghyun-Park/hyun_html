@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=DM+Mono:ital@1&display=swap"
+        rel="stylesheet" type="text/css">
+    <style>
+        /*초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+        }
+
+        /*헤더 */
+        #main_header {
+            width: 960px;
+            height:300px;
+            margin: 0 auto;
+            position: relative;
+            
+        }
+
+        #main_header>audio {
+            position: absolute;
+            left: 0px;
+            top: 10px;
+        }
+
+        #main_header>#topside_menu {
+
+            position: absolute;
+            left: 500px;
+            top: 10px;
+        }
+
+        #main_header>#title {
+            position: absolute;
+            left: 330px;
+            top: 60px;
+        }
+
+        #main_header>#ser {
+            position: absolute;
+            left: 250px;
+            top: 210px;
+        }
+
+        #main_header>#middle_menu {
+            position: absolute;
+            left: 20px;
+            top: 270px;
+        }
+
+        /*타이틀*/
+
+        #title>h1 {
+            font-size: 100px;
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: rgba(27, 41, 231, 0.842);
+            font-style: italic;
+            text-shadow: -10px -3px 4px rgba(96, 117, 150, 0.95);
+
+        }
+
+        #title>p {
+            text-align: center;
+            font-size: 16px;
+            height: 25px;
+            left: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgba(80, 23, 172, 0.548);
+            font-style: oblique;
+            text-shadow: -10px -3px 4px rgba(96, 117, 150, 0.95);
+        }
+
+        #input1 {
+            width: 250px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        /*메뉴(1)*/
+        #topside_menu {
+            overflow: hidden;
+        }
+
+        #topside_menu>ul>li {
+            float: left;
+        }
+
+        #topside_menu>ul>li>a {
+            display: block;
+            padding: 7px 50px;
+            background-color: cornflowerblue;
+            border: 1px solid wheat;
+
+        }
+
+        #topside_menu>ul>li:first-child>a {
+            border-radius: 5px 0 0 5px;
+        }
+
+        #topside_menu>ul>li:last-child>a {
+            border-radius: 0 5px 5px 0;
+        }
+
+        /*메뉴(2)*/
+        #middle_menu {
+            overflow: hidden;
+        }
+
+        #middle_menu>ul>li {
+            float: left;
+        }
+
+        #middle_menu>ul>li>a {
+            display: block;
+            padding: 7px 70px;
+            background-color: cornflowerblue;
+            border: 1px solid wheat;
+        }
+
+        #middle_menu>ul>li:first-child>a {
+            border-radius: 5px 0 0 5px;
+        }
+
+        #middle_menu>ul>li:last-child>a {
+            border-radius: 0 5px 5px 0;
+        }
+
+        /*콘텐츠*/
+        #content {
+            width: 960px;
+            margin: 0 auto;
+        }
+        #con1 { 
+            overflow: scroll;
+            border: 1px solid black;
+            margin-top: 10px;
+            background-color: #D4F4FA;
+            text-align: center;
+        }
+        #con2 {
+            overflow: hidden;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+
+        /*본문*/
+        #main_section {
+            width: 300px;
+            float: left;
+            position: relative;
+        }
+
+        #main_section>img {
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            position: absolute;
+            top : 40px;left: 100px;
+        }
+
+        /*사이드*/
+        #left_aside {
+            width: 150px;
+            height: 800px;
+            float: left;
+            border: 1px solid black;
+            overflow: scroll;
+            background-color: #FAE0D4;
+            text-align: center;
+        }
+        #left_aside>h1{
+            margin-top: 20px;
+            
+        }
+
+        #right_aside {
+            width: 150px;
+            height: 800px;
+            float: right;
+            border: 1px solid black;
+            overflow: scroll;
+            background-color: #FAF4C0;
+            text-align: center;
+        }
+        #right_aside>h1 {
+            margin-top: 20px;
+           
+        }
+
+        /*푸터*/
+        #main_footer {
+            width: 960px;
+            margin: 0 auto;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main_header">
+        <audio controls src="MorePlastic.mp3"></audio>
+        <div id="title">
+            <h1>Java</h1>
+            <p>No Pain no Gain</p>
+        </div>
+        <nav id="topside_menu">
+            <ul>
+                <li><a href="#">내 계정</a></li>
+                <li><a href="#">이메일</a></li>
+                <li><a href="#">이미지</a></li>
+            </ul>
+        </nav>
+        <nav id="middle_menu">
+            <ul>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">Linux</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </nav>
+        <div id="ser">
+            Search: <input type="text" id="input1">
+            <input type="submit" value="제출">
+        </div>
+    </header>
+    <div id="content">
+        <section id="con1">
+            <h1>HTML5</h1>
+            <p>Nulla fugiat mollit voluptate et irure. Mollit est duis ad quis ad esse cupidatat qui aliquip. Velit elit
+                elit dolor quis id ad ut magna non duis aliqua. Quis veniam elit proident pariatur laborum officia
+                consectetur nulla nulla aliqua mollit eu ad. Quis ut minim mollit voluptate quis laboris irure magna
+                deserunt sunt elit ipsum. Aute esse ut dolore irure cillum. Aliquip labore culpa magna qui magna
+                voluptate esse ex reprehenderit labore non cupidatat laboris.
+
+                Pariatur ipsum velit est esse amet occaecat mollit ad sint cillum aliqua id. Ipsum tempor consectetur
+                ipsum excepteur veniam proident ad. Dolor id excepteur occaecat incididunt. Reprehenderit elit proident
+                labore laboris nostrud et laboris cupidatat. Eu sint pariatur ullamco occaecat irure minim amet.
+                Consequat labore et adipisicing laborum quis commodo id velit laborum. Cupidatat proident mollit
+                reprehenderit dolor velit velit ipsum exercitation incididunt.
+
+                Duis culpa tempor adipisicing eiusmod sit laborum quis officia. Excepteur enim ad in nulla nisi ex
+                consectetur eiusmod consequat. Excepteur laboris dolor amet officia mollit.
+
+                Laboris nisi ullamco tempor laboris excepteur enim culpa dolore aute ipsum cillum id. Consequat eiusmod
+                anim nisi velit ut minim in eiusmod occaecat quis qui ipsum. Amet consequat ea laborum magna laborum est
+                proident minim occaecat. Eiusmod incididunt eu dolor nisi. Cupidatat commodo velit enim reprehenderit
+                exercitation aliqua. Officia reprehenderit anim non est deserunt.</p>
+            </section>
+        <div id="con2">
+            <aside id="left_aside">
+                <h1>JAVA</h1>
+                Culpa nostrud eu ea proident consectetur non velit minim do velit eiusmod esse. Dolore tempor excepteur
+                excepteur nostrud nostrud aute dolor irure. Adipisicing officia exercitation eiusmod nulla consequat
+                dolor
+                mollit amet consectetur culpa. Consectetur cillum aliqua non est ad pariatur ex minim voluptate. Ipsum
+                exercitation occaecat cupidatat nulla occaecat deserunt id do. Voluptate duis occaecat et est nisi
+                fugiat
+                reprehenderit laborum.
+
+                Nulla id nulla duis proident velit incididunt velit deserunt. Anim ullamco est sint labore id dolore
+                sunt
+                deserunt proident. Labore enim quis sunt irure.
+
+                Reprehenderit est ipsum laboris ea cillum nostrud nulla est. Minim est enim proident aute magna officia
+                sint
+                magna. Ipsum reprehenderit Lorem esse labore nostrud sint reprehenderit est adipisicing nostrud. Nisi
+                duis
+                incididunt et ut velit ex aliquip culpa. Nisi mollit in mollit mollit elit nisi qui consectetur. Ullamco
+                non
+                non dolore dolor quis. Ut irure amet irure reprehenderit enim ullamco labore voluptate proident commodo.
+
+                Incididunt quis sunt cillum do ut adipisicing incididunt cupidatat minim nulla. Dolore nostrud velit eu
+                labore nisi consequat officia tempor id. Aute laborum nisi ea anim nostrud tempor. Adipisicing cupidatat
+                eu
+                voluptate cillum id sit sint excepteur. Culpa do qui cillum pariatur Lorem eiusmod aliquip amet aute
+                incididunt veniam anim incididunt laborum.
+            </aside>
+            <section id="main_section">
+                <img src="파이어폭스.png">
+            </section>
+            <aside id="right_aside">
+                <h1>CSS3</h1>
+                <p>Est non quis laboris id. Deserunt tempor enim laborum reprehenderit ut enim excepteur mollit. Nostrud
+                    ea
+                    commodo dolor ex qui nostrud voluptate eu do deserunt reprehenderit ad. Irure ex commodo incididunt
+                    qui.
+                    Do
+                    enim sit deserunt sunt excepteur aliquip tempor consequat excepteur consectetur. Ipsum nulla
+                    excepteur
+                    aliqua sunt enim veniam officia anim.
+
+                    Consectetur quis proident deserunt et aliquip commodo Lorem amet nulla. Est irure deserunt
+                    exercitation
+                    id
+                    et sit ullamco. Laboris esse dolor fugiat ullamco mollit dolor veniam.
+
+                    Sint sint mollit exercitation eiusmod sunt. Non consectetur fugiat excepteur sint in pariatur velit.
+                    Lorem
+                    duis enim nulla proident. Elit Lorem irure amet ex eu amet aute eiusmod Lorem et incididunt
+                    voluptate
+                    et. Et
+                    eu nulla non amet nisi. Commodo cillum ad velit velit magna exercitation velit sint eu laborum
+                    officia
+                    consequat irure culpa.
+
+                    Adipisicing in ea et cillum ut elit id id magna incididunt voluptate Lorem. Veniam in velit
+                    consequat
+                    esse
+                    eu deserunt sint tempor eiusmod officia. Eu ut eiusmod deserunt proident commodo aute deserunt
+                    laboris
+                    deserunt consequat eiusmod laboris. Sunt reprehenderit proident occaecat do et. Eiusmod Lorem sunt
+                    sunt
+                    adipisicing in Lorem quis.</p>
+            </aside>
+        </div>
+    </div>
+    <footer id="main_footer">
+        <h3>H5 + C3 B</h3>
+        <p>Web Kyung Hyun</p>
+    </footer>
+
+</body>
+
+</html>
