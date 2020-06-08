@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            /*그리드 레이아웃은 부모에게 적용함*/
+            display: grid;
+            grid-template-columns: 2fr 8fr;
+            /*= 20% 80%*/
+            grid-template-rows: 500px 1000px;
+            gap: 10px;
+        }
+
+        .container>div {
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header</h1>
+            Dolore consequat consequat voluptate qui proident ex reprehenderit mollit dolore Lorem.
+        </div>
+        <div class="aside">
+            <h1>aside</h1>
+            <p>Ex ipsum proident nostrud eiusmod aliqua officia cillum occaecat sit velit ad eu ullamco id.</p>
+        </div>
+        <div class="section">
+            <h1>section</h1>
+            <p>Ex minim ut quis reprehenderit id commodo.</p>
+        </div>
+        <div class="footer">
+            <h1>footer</h1>
+            <p>Consequat non aliquip nulla quis incididunt minim eiusmod sit dolor Lorem deserunt ut sit.</p>
+        </div>
+    </div>
+</body>
+
+</html>
